@@ -1,0 +1,97 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 50px;
+  width: 30%;
+}
+
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+   color: #080808;
+}
+
+.site-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  padding: 0 100px;
+}
+
+ul > logo {
+  position: fixed;
+  margin: 0;
+}
+
+.navigation {
+  list-style: none;
+  font-size: 18px;
+}
+
+.navigation li {
+  float: right;
+  padding-right: 20px;
+}
+
+.navigation li a {
+  color: silver;
+}
+
+.navigation li a:focus {
+  color: #333;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+  padding: 0 80px;
+}
+
+#gallery > img {
+  width: 25%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 80px auto;
+}
+
+.social-icon-link {
+    margin-right: 2px;
+    margin-left: 2px;
+    padding: 3px;
+}
+
+.social-icon-link:hover {
+  opacity: 0.57;
+    -webkit-transition: opacity 300ms ease;
+    transition: opacity 300ms ease;
+}
+
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.copyright {
+  display: block;
+  color: silver;
+  text-align: center;
+  font-family: sans-serif;
+}
