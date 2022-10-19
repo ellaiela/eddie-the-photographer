@@ -5,7 +5,6 @@
 h2 {
   font-family: sans-serif;
   font-size: 50px;
-  width: 30%;
 }
 
 img {
@@ -26,10 +25,6 @@ a {
   padding: 0 100px;
 }
 
-ul > logo {
-  position: fixed;
-  margin: 0;
-}
 
 .navigation {
   list-style: none;
@@ -65,7 +60,7 @@ article {
   justify-content: space-evenly;
   row-gap: 25px;
   padding: 0 10px;
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
 }
 
 article img + p {
@@ -75,9 +70,9 @@ article img + p {
   color: #141414;
 }
 
-.gallery:hover {
+/*.gallery:hover {
   filter: grayscale(0%);
-}
+}/*/
 
 .footer {
   display: flex;
@@ -85,6 +80,7 @@ article img + p {
   align-items: center;
   justify-content: center;
   margin: 80px auto;
+  
 }
 
 .about-me {
@@ -127,4 +123,30 @@ article img + p {
   color: silver;
   text-align: center;
   font-family: sans-serif;
+}
+
+@media only screen and (max-width: 815px) {
+  h2 {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  ul.logo {
+    margin: 0;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  article {
+  display: grid;
+  width: 100%;
+  row-gap: 10px;
+}
+
+  .footer {
+    height: 100px;
+  }
+  
 }
